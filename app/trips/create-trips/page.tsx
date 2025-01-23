@@ -1,7 +1,7 @@
 import React from 'react'
 
-export default function CreateTrips() {
+export default function page() {
     return (
-        <div>Create Trips</div>
+        <div>page</div>
     )
 }

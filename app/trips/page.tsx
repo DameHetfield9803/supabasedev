@@ -41,15 +41,11 @@ export default async function Countries() {
                             <TableCell>{trip.price_per_day}</TableCell>
                             <TableCell>{trip.days}</TableCell>
                             <TableCell>{trip.total_price}</TableCell>
-                            <TableCell><Link href="/trips/edit-trips"><Button>Edit</Button></Link></TableCell>
+                            <TableCell><Link href={`/trips/edit-trips/${trip.id}`}><Button>Edit</Button></Link></TableCell>
                         </TableRow>
                     ))}
                 </TableBody>
             </Table>
-            <div className='space-x-4'>
-                <Link href="/trips/create-trips"><Button>Add trip</Button></Link>
-                <Link href="/trips/delete-trips"><Button>Delete trip</Button></Link>
-            </div>
         </div>
     )
 }
