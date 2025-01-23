@@ -18,11 +18,12 @@ export default async function Countries() {
         .select('*')
     return (
         <div>
+            <h1 className='text-2xl text-center mb-2'>View all countries</h1>
             <Table>
                 <TableCaption>List of all countries</TableCaption>
                 <TableHeader>
                     <TableRow>
-                        <TableHead className="w-[128px]">Country ID</TableHead>
+                        <TableHead className="w-[128px]">Country Number</TableHead>
                         <TableHead>Country Name</TableHead>
                         <TableHead>Country Code</TableHead>
                     </TableRow>
