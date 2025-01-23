@@ -18,9 +18,10 @@ export default async function Countries() {
         .select('*')
     return (
         <div>
-            <h1 className='text-2xl text-center mb-2'>View all countries</h1>
+            <h1 className='text-2xl text-center mb-3'>View all {countries?.length} countries</h1>
             <Table>
-                <TableCaption>List of all countries</TableCaption>
+                <TableCaption>List of all {countries?.length} countries</TableCaption>
+                <TableCaption>NOTE: The countries are sorted by alphabetical order</TableCaption>
                 <TableHeader>
                     <TableRow>
                         <TableHead className="w-[128px]">Country Number</TableHead>
